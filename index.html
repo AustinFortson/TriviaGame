@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TriviaGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Assets/Javascript/apps.js"></script>
+</head>
+<body>
+    <div id= "quiz">
+    <!--Title-->
+    <h1>Do The Dew Quiz!</h1>
+    <!--Time Left-->
+    <h2>Time Remaining: <span id="countdown"></span> Seconds</h2>
+    <!--First Question-->
+    <h3>1. Mountain Dew is a ______ .</h3><br>
+        <form>
+            <input type="radio" name="choice" value="Beverage"> Beverage
+            <input type="radio" name="choice" value="Snack"> Snack
+            <input type="radio" name="choice" value="National Park"> National Park
+            <input type="radio" name="choice" value="None of These"> None of These
+        </form>
+    <!--Second Question-->
+    <h3>2. The initial launch of the product was a joke.</h3>
+        <form>
+            <input type="radio" name="choice" value="True"> True
+            <input type="radio" name="choice" value="False"> False
+        </form>
+    <!--Third Question-->
+    <h3>3. Mountain Dew was originally a reference to what?</h3><br>
+        <form>
+            <input type="radio" name="choice" value="Mountains"> Mountains
+            <input type="radio" name="choice" value="Doritos"> Doritos
+            <input type="radio" name="choice" value="Moonshine"> Moonshine
+            <input type="radio" name="choice" value="Nature"> Nature
+        </form>
+    <!--Fourth Question-->
+    <h3>4. Mountain Dew mixed with Malibu is called _______ .</h3><br>
+        <form>
+            <input type="radio" name="choice" value="Mountain Dew Malibu"> Mountain Dew Malibu
+            <input type="radio" name="choice" value="Malibu Mountain Dew"> Malibu Mountain Dew
+            <input type="radio" name="choice" value="Mali-Dew"> Mali-Dew
+            <input type="radio" name="choice" value="That Don't Exist"> That Don't Exist
+        </form>
+    <!--Fifth Question-->
+    <h3>5. Mountain Dew mixed with Malibu is called _______ .</h3><br>
+        <form>
+            <input type="radio" name="choice" value="Mountain Dew Malibu"> Mountain Dew Malibu
+            <input type="radio" name="choice" value="Malibu Mountain Dew"> Malibu Mountain Dew
+            <input type="radio" name="choice" value="Mali-Dew"> Mali-Dew
+            <input type="radio" name="choice" value="That Don't Exist"> That Don't Exist
+            <div id = "submit">Finish</div>
+        </form>
+    </div>
+<script>
+$("#submit").click(function () {
+    $("body").append($("<nav><h2>Times Up!<br>These Are The Results:<br>Correct:<br>Wrong:</h2></nav>"));
+  });
+  </script>
+   
+</body>
+</html>
